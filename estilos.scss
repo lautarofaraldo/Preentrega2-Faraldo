@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+$color1: white;
+$color2: black;
+$color3: rgb(39, 129, 189);
+
+/* HEADER */
+nav{
+    font-weight: bold;
+    background-color: $color2;
+    
+    .navbar-brand:hover{
+        color: $color1;
+    }
+
+    a{
+        color: $color1;
+        text-decoration: none;
+    }
+
+    ul li{
+        display: inline-block;
+        padding: 0px 70px;
+        margin-top: 20px;
+    }
+    
+    ul li a:hover{
+        color: $color3;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+
+}
+/* HEADER */
+/*INDEX*/
+.container{
+    position: relative;
+    
+    .container-img{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        padding: 10px;
+
+        @mixin imagenIndex{
+            height: 350px;
+            width: 250px;
+            border: 10px solid $color1;
+            box-shadow: 0 5px 15px #9b9999;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .imagenIndex{
+            @include imagenIndex;
+        }
+
+        .imagenIndex:hover{
+            transform: scale(1.1);
+            z-index: 3;
+            box-shadow: none;
+        }
+
+    }
+
+}
+/*INDEX*/
+/* GALERIA */
+.containerObras{
+    padding: 90px 90px 80px 90px;
+    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+
+    .obra{
+        height: 400px;
+        width: 250px;
+        transition: 0.5s;
+    }
+
+    .obra:hover{
+        transform: scale(1.05);
+        transition-duration: cubic-bezier(0.25,0.1,0.25,1);
+    }
+
+}
+/* GALERIA */
+/* SHOP */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+    padding: 70px;
+    gap: 25px;
+
+    .card{
+        transition: 0.5s;
+
+        img{
+            height: 270px;
+            margin: -10px;
+        }
+
+        h4{
+            padding-top: 20px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+    }
+
+    .card:hover{
+        transform: scale(1.02);
+    }
+
+    .btn{
+        color: $color1;
+        background-color: rgba(0, 0, 0, 0.877);
+    }
+    
+    .btn:hover{
+        color: $color1;
+        background-color: $color3;
+        transition: 0.5s;
+    }
+
+}
+/* SHOP */
+/* SOCIAL MEDIA */
+.socialMedia{
+    width: 100%;
+    height: 700px;
+    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        padding: 30px;
+    }
+
+    @media only screen and (max-width: 320px) and (min-width: 5px)  {  
+        .socialMedia .fa-brands{
+            block-size: 100px;
+        }
+    } 
+
+}
+/* SOCIAL MEDIA */
+/* CONTACTATE */
+.formContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color2;
+    padding: 20px;
+
+    .form{
+        min-width: 400px;
+        flex: 1;
+        text-align: center;
+
+        .formInput{
+            width: 100%;
+            padding: 7px;
+            margin: 10px;
+        
+        }
+
+        textarea{
+            min-height: 150px;
+        }
+
+    }
+
+    .formImg{
+        flex: 1;
+        padding:10px;
+        display: flex;
+        margin-left: 200px;
+
+        img{
+            width: 350px;
+            padding: 10px;
+            margin: auto;
+        }
+
+    }
+
+}
+/* CONTACTATE */
+/* FOOTER */
+footer{
+
+    img{
+    width: 200px;
+    margin-top: 30px;
+    }
+
+    .copyright{
+        background-color: $color2;
+        color: $color1;
+    }
+
+    h2{
+        color: $color1;
+        
+    }
+
+    .descripcion{
+        color: $color1;
+    }
+
+    i{
+        color: $color1;
+        padding: 5px;
+    }
+
+    i:hover{
+        color: $color3;
+    }
+    
+}
+/* FOOTER */

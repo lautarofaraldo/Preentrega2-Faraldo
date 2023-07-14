@@ -1,221 +1,194 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 /* HEADER */
-nav{
-    font-weight: bold;
-    background-color: black;
+nav {
+  font-weight: bold;
+  background-color: black;
+}
+nav .navbar-brand:hover {
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 70px;
+  margin-top: 20px;
+}
+nav ul li a:hover {
+  color: rgb(39, 129, 189);
+  transition: 0.5s;
+  text-decoration: none;
 }
 
-h1{
-    color: white;
-}
-
-ul li{
-    display: inline-block;
-    padding: 0px 70px;
-    margin-top: 20px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-ul li a:hover{
-    color: rgb(39, 129, 189);
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.navbar-brand:hover{
-    color: #fff;
-}
 /* HEADER */
 /*INDEX*/
-.container{
-    position: relative;
+.container {
+  position: relative;
+}
+.container .container-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 10px;
+}
+.container .container-img .imagenIndex {
+  height: 350px;
+  width: 250px;
+  border: 10px solid white;
+  box-shadow: 0 5px 15px #9b9999;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container .container-img .imagenIndex:hover {
+  transform: scale(1.1);
+  z-index: 3;
+  box-shadow: none;
 }
 
-.container .container-img{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    padding: 10px;
-}
-
-.container .container-img .imagen{
-    height: 350px;
-    width: 250px;
-    border: 10px solid #fff;
-    box-shadow: 0 5px 15px #9b9999;
-    overflow: hidden;
-}
-
-.container-img .imagen:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    z-index: 3;
-    box-shadow: none;
-}
 /*INDEX*/
 /* GALERIA */
-.containerObras{
-    padding: 90px 90px 80px 90px;
-    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+.containerObras {
+  padding: 90px 90px 80px 90px;
+  background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+}
+.containerObras .obra {
+  height: 400px;
+  width: 250px;
+  transition: 0.5s;
+}
+.containerObras .obra:hover {
+  transform: scale(1.05);
+  transition-duration: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.obra{
-    height: 400px;
-    width: 250px;
-}
-
-.obra:hover{
-    transform: scale(1.05);
-    transition: 1s;
-    transition-duration: cubic-bezier(0.25,0.1,0.25,1);
-}
 /* GALERIA */
 /* SHOP */
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
-    padding: 70px;
-    gap: 25px;
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+  padding: 70px;
+  gap: 25px;
+}
+.cards .card {
+  transition: 0.5s;
+}
+.cards .card img {
+  height: 270px;
+  margin: -10px;
+}
+.cards .card h4 {
+  padding-top: 20px;
+}
+.cards .card span {
+  font-weight: bold;
+}
+.cards .card:hover {
+  transform: scale(1.02);
+}
+.cards .btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+.cards .btn:hover {
+  color: white;
+  background-color: rgb(39, 129, 189);
+  transition: 0.5s;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    transition: 1s;
-    transition-duration: cubic-bezier(0.25,0.1,0.25,1);
-}
-
-.cards img{
-    height: 270px;
-    margin: -10px;
-}
-
-.card h4{
-    padding-top: 20px;
-}
-
-.card span{
-    font-weight: bold;
-}
-
-.btn{
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.877);
-}
-
-.btn:hover{
-    color: #fff;
-    background-color: rgb(39, 129, 189);
-    transition: 0.5s;
-}
 /* SHOP */
 /* SOCIAL MEDIA */
-.socialMedia{
-    width: 100%;
-    height: 700px;
-    background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.socialMedia {
+  width: 100%;
+  height: 700px;
+  background-image: url(https://img.freepik.com/fotos-gratis/preto-parede-de-estuque-manchado_1194-7562.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
-.socialMedia i{
-    padding: 30px;
+.socialMedia i {
+  padding: 30px;
 }
-
-/* Para 320px */  
-@media only screen and (max-width: 340px) and (min-width: 5px)  {  
-    .socialMedia .fa-brands{
-        block-size: 100px;
-    }
-} 
-
-
-
+@media only screen and (max-width: 320px) and (min-width: 5px) {
+  .socialMedia .socialMedia .fa-brands {
+    block-size: 100px;
+  }
+}
 
 /* SOCIAL MEDIA */
 /* CONTACTATE */
-.formContainer{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: black;
-    padding: 20px;
+.formContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+.formContainer .form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+}
+.formContainer .form .formInput {
+  width: 100%;
+  padding: 7px;
+  margin: 10px;
+}
+.formContainer .form textarea {
+  min-height: 150px;
+}
+.formContainer .formImg {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  margin-left: 200px;
+}
+.formContainer .formImg img {
+  width: 350px;
+  padding: 10px;
+  margin: auto;
 }
 
-.form{
-    min-width: 400px;
-    flex: 1;
-    text-align: center;
-}
-
-.formInput{
-    width: 100%;
-    padding: 7px;
-    margin: 10px;
-
-}
-
-form textarea{
-    min-height: 150px;
-}
-
-.formImg{
-    flex: 1;
-    padding:10px;
-    display: flex;
-}
-
-.formImg img{
-    width: 350px;
-    padding: 10px;
-    margin: auto;
-}
 /* CONTACTATE */
+/* FOOTER */
+footer img {
+  width: 200px;
+  margin-top: 30px;
+}
+footer .copyright {
+  background-color: black;
+  color: white;
+}
+footer h2 {
+  color: white;
+}
+footer .descripcion {
+  color: white;
+}
+footer i {
+  color: white;
+  padding: 5px;
+}
+footer i:hover {
+  color: rgb(39, 129, 189);
+}
 
 /* FOOTER */
-footer img{
-    width: 200px;
-    margin-top: 30px;
-}
 
-.copyright{
-    background-color: black;
-    color: #fff;
-}
-
-footer h2{
-    color: #fff;
-}
-
-.descripcion{
-    color: #fff;
-}
-
-i{
-    color: #fff;
-    padding: 5px;
-}
-
-.redSocial i:hover{
-    color: rgb(39, 129, 189);
-}
-/* FOOTER */
+/*# sourceMappingURL=estilos.css.map */
